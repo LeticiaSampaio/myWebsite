@@ -1,0 +1,155 @@
+.clear{
+    display: block;
+    clear: both;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#content{
+    height: 450px;
+}
+
+#title{
+    background-color: lightcoral;
+    color: white;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    padding: 0px;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+h1{
+    padding: 5px;
+}
+
+h3{
+    color: lightcoral;
+}
+
+.animation{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 450px;
+    float: left;
+    -webkit-perspective: 1000px;
+}
+
+.slider-wrapper {
+    display: inline-block;
+    width: 20px;
+    height: 150px;
+    padding: 0;
+}
+
+.slider-wrapper input {
+    width: 150px;
+    height: 20px;
+    margin-left: -150px;
+    margin-top: 30px;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg);
+}
+
+#rotate-range-Y{
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    padding: 0;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+#text{
+    background-color: lightblue;
+    color: white;
+    width: 20%;
+    height: auto;
+    margin: 0px 20px;
+    padding: 10px 15px;
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+#cube{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(-100px);
+}
+
+#cube figure{
+    width: 196px;
+    height: 196px;
+    display: block;
+    position: absolute;
+    border: 2px solid black;
+    opacity: .5;
+}
+
+#cube .front{
+    background: red;
+    -webkit-transform: rotateY(0) translateZ(100px);
+}
+
+#cube .back{
+    background: green;
+    -webkit-transform: rotateY(180deg) translateZ(100px);
+}
+
+#cube .right{
+    background: blue;
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .left{
+    background: yellow;
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top{
+    background: brown;
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom{
+    background: brown;
+    -webkit-transform: rotateX(-90deg) translateZ(100px);
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+#footer li{
+    display: inline-block;
+}
+
+#footer a:link, #footer a:visited{
+    text-decoration: none;
+    color: #E1B3B3;
+    display: block;
+    width: 160px;
+    border-bottom: 3px solid white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer a:hover{
+    border-bottom: 3px solid lightblue;
+    color: lightblue;
+}
