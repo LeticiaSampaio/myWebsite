@@ -87,7 +87,7 @@ h3{
     -webkit-transform: translateZ(-100px);
 }
 
-#cube figure{
+.face{
     width: 196px;
     height: 196px;
     display: block;
